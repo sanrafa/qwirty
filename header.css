@@ -1,0 +1,105 @@
+.main-nav {
+    display: flex;
+    background-color: #00006b;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0.2rem;
+    font-family: 'Dosis', sans-serif;
+}
+
+.sub-nav {
+    display: flex;
+    padding: 4px;
+    margin-right: 2vw;
+    justify-content: space-between;
+}
+
+.sub-nav input {
+    border-bottom: 3px solid #00326b;
+    flex-grow: 1;
+    padding-left: 5px;
+    margin-left: 8px;
+}
+
+.credit-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: orangered;
+    font-size: 14px;
+    padding: 4px;
+    margin-left: 12px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.sub-nav button {
+    border: 0;
+    background-color: #00006b;
+    color: white;
+    padding: 4px;
+}
+
+.search-form {
+    width: 100%;
+    display: flex;
+}
+
+.company-name {
+    padding: 12px 12px 20px 12px;
+    margin-right: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    text-shadow: 0.75px 2px 2px rgba(13, 13, 192, 0.548);
+    color: blue;
+}
+
+ul.full-width {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.short-width {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list a {
+    padding: 0.8rem;
+    border-right: 2px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover {
+    color: lightskyblue;
+    text-shadow: 2px 1px black;
+}
+
+.main-nav .full-width li:last-of-type a {
+    border-right: 0;
+}
+
+.main-nav .short-width li:last-of-type a {
+    border-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .short-width {
+        display: none;
+    }
+    ul.full-width {
+        display: flex;
+    }
+}
